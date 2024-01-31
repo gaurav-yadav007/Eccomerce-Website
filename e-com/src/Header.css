@@ -1,0 +1,88 @@
+.header{
+    background-color: #be95c4 ;
+}
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .header > * {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  
+  /* If you want to remove bullets only from a specific list, use a class or ID selector */
+  .custom-list {
+    list-style: none;
+  }
+
+  /* Header.css */
+/* Add this to your CSS */
+
+.header {
+  position: relative;
+}
+
+.list-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 82%; /* Position the dropdown below the list icon */
+  left: -200px; /* Initial position off-screen to the left */
+  transition: left 0.5s ease; /* Add a smooth transition effect */
+  list-style: none;
+  padding: 0;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  z-index: 1;
+  height: 800%;
+  width: 15%;
+  /* position: fixed; */
+}
+
+.list-icon:hover .dropdown-list {
+  left: 0; /* Slide in from the left on hover */
+}
+
+.dropdown-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f5f5f5;
+}
+
+/* Add this to your CSS */
+.dropdown-list li:hover {
+  background-color: #f5f5f5;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

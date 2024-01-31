@@ -1,0 +1,19 @@
+/* Add this to your stylesheet or styled components */
+.about-container {
+    /* background-color: #f8f8f8; Set your desired background color */
+    padding: 20px; /* Adjust the padding as needed */
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px; /* Set the maximum width of the content container */
+    margin: 0 auto; /* Center the content container */
+    text-align: justify;
+  }
+  

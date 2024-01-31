@@ -1,0 +1,154 @@
+/* Home.css */
+.category-container {
+    display: flex;
+    justify-content: center; /* Center the category images horizontally */
+    align-items: center; /* Center the category images vertically */
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .category-container img {
+    width: 600px; /* Set a fixed width for the category images */
+    height: 600px; /* Set a fixed height for the category images */
+    margin: 0 10px; /* Add margin to bring the images closer together */
+    cursor: pointer;
+    /* Add any other styling properties you need */
+  }
+  
+  .product-list {
+    /* Add styling for the product list if needed */
+  }
+  
+  /* Add any other styles you need for the rest of your components */
+  /* Home.css */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-list li {
+    width: 200px; /* Set a fixed width for each product item */
+    margin: 10px; /* Add margin for spacing between products */
+  }
+  
+  .product-list img {
+    width: 100%; /* Make the images fill the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .product-list-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-item {
+    width: calc(33.33% - 20px); /* Set width for items not of type 'tv' or 'laptop' */
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .product-item.wide-item {
+    width: calc(65% - 20px); /* Set width for items of type 'tv' or 'laptop' with larger size */
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-item img {
+    width: 100%; /* Default width for regular items */
+    height: 400px; /* Default height for regular items */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-item.wide-item img {
+    width: 130%; /* Larger width for items of type 'tv' or 'laptop' */
+    height: 600px; /* Larger height for items of type 'tv' or 'laptop' */
+  }
+  
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: green;
+  }
+  
+  .product-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  /* 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px; 
+  height: auto; 
+  max-width: 90vw; 
+  max-height: 90vh; 
+  overflow: auto;  */
+  .HomeImage{
+    text-align: center;
+    margin-top: 10px;
+  }
